@@ -24,23 +24,23 @@
   <div class="wrap">
     <a class="brand" href="#" aria-label="The Unsung, top of the page"><img src="icon.png" width="30" height="30" alt=""><span>The Unsung</span></a>
     <nav aria-label="Sections">
-      <a href="#story">Who's who</a><a href="#features">Features</a><a href="#screens">Screens</a><a href="#progress">Progress</a>
+      <a href="#story">Who's who</a><a href="#features">Features</a><a href="#screens">Screens</a><a href="#progress">Progress</a><a href="#changes">What's new</a>
     </nav>
-    <a class="btn btn-sm btn-ghost" href="#progress">Coming soon</a>
+    <a class="btn btn-sm" href="#download">Test build</a>
   </div>
 </header>
 
 <main>
 <section class="hero wrap">
   <div class="hero-text">
-    <span class="badge badge-gold">Coming soon to the ZX Spectrum Next</span>
+    <span class="badge badge-gold">In the making for the ZX Spectrum Next: test builds below</span>
     <h1><img class="logo" src="logo.webp" width="1169" height="456" alt="The Unsung"></h1>
     <p class="lead">Someone is stealing the songs of Mardle-on-Wend.</p>
     <p>Long ago, the city's builders sang protective wards into every stone, and every song about a hero who defended Mardle made its walls a little stronger. Now the songs are vanishing, bottled one by one by the Lord Archivist, Ambrose Quill. People are forgetting their heroes. The walls are cracking. And the horde of Kesh the Unhurried is forty days away.</p>
     <p>Only one person still remembers the old songs: a down-at-heel bard with a sarcastic lute. Gather a party, go down beneath the city, win the songs back and sing the walls whole again, before the horde arrives.</p>
     <div class="actions">
-      <a class="btn" href="#screens">See it so far</a>
-      <a class="btn btn-ghost" href="#progress">What's coming</a>
+      <a class="btn" href="#download">Try the test build</a>
+      <a class="btn btn-ghost" href="#screens">See it so far</a>
     </div>
   </div>
   <figure class="hero-shot">
@@ -102,12 +102,45 @@
     <h2>Notice of works</h2>
     <ol class="milestones">
       <li class="done"><b>The painted corridor</b><span>Walls, doors and torchlight in true perspective, walked square by square.</span></li>
-      <li class="now"><b>A street of the town</b><span>Mardle-on-Wend in the same view: house fronts, signs and the Drowned Fiddler.</span></li>
-      <li><b>The party and a fight</b><span>Six heroes on the roster, and a first fight against an animated monster.</span></li>
-      <li><b>Spells and songs</b><span>Casting, the bard's songs, and a rest at the inn.</span></li>
-      <li><b>Act 1, start to finish</b><span>The first download: the Shambles, and the cellars beneath the Drowned Fiddler. Then a new act at a time.</span></li>
+      <li class="done"><b>A street of the town</b><span>Mardle-on-Wend in the same view: house fronts, signs and the Drowned Fiddler.</span></li>
+      <li class="done"><b>The party and a fight</b><span>Six heroes on the roster, fights you can talk your way out of, chests and their traps.</span></li>
+      <li class="done"><b>Spells and songs</b><span>Casting, the bard's songs and their tunes, and a rest at the inn.</span></li>
+      <li class="now"><b>Act 1, start to finish</b><span>The cellars beneath the Drowned Fiddler and the rat warrens are in; the third level is being built.</span></li>
     </ol>
-    <p class="meta">No download yet. Signed, in triplicate, the Heroes' Guild.</p>
+    <p class="meta">Test builds below. Signed, in triplicate, the Heroes' Guild.</p>
+  </div>
+</section>
+
+<section id="download" class="wrap">
+  <div class="card download">
+    <div>
+      <p class="eyebrow">Test build</p>
+      <h2>Play it so far</h2>
+      <p>Unfinished, and free: the town and the first two levels under it, with the third begun. For testers: expect rough edges.</p>
+      <p class="meta">Latest build: <!--v-->v113, 27 October 2026, 0.7 MB<!--/v-->. <a href="#changes">What's new in it</a></p>
+      <div class="actions"><a class="btn" href="unsung.zip" download>Download the zip</a></div>
+    </div>
+    <ol class="steps">
+      <li><b>On a real Next:</b> unzip it and copy the <code>unsung</code> folder to your SD card. The <code>.dat</code> files are the game's pictures: keep them beside <code>unsung.nex</code>. Pick <code>unsung.nex</code> in the Browser and press <kbd>ENTER</kbd>. A 1MB or 2MB Next both work (a 2MB one unpacks everything at the start, then never waits for the card).</li>
+      <li><b>In CSpect:</b> start it from inside the <code>unsung</code> folder, so it finds the <code>.dat</code> files, and open <code>unsung.nex</code>.</li>
+      <li><b>Playing:</b> <kbd>Q</kbd> <kbd>A</kbd> <kbd>O</kbd> <kbd>P</kbd> walk and turn; <kbd>1</kbd>-<kbd>7</kbd> a hero's sheet; <kbd>C</kbd> cast or sing; in menus, a number or <kbd>Q</kbd>/<kbd>A</kbd> and <kbd>SPACE</kbd>. You start in the Shambles: the Drowned Fiddler is along the street, and Tansy's cellar is the way down.</li>
+      <li><b>Found something?</b> Tell whoever sent you the link, with the version the game shows as it starts (<i>The Unsung v...</i>), what you did, and a photo of the screen if you can.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="changes" class="wrap">
+  <p class="eyebrow">Changelog</p>
+  <h2>What's new</h2>
+  <div class="log">
+    <article>
+      <header><span class="badge">v113</span><time datetime="2026-10-27">27 October 2026</time></header>
+      <ul>
+        <li>The first test build. In it: the Shambles by day, dusk and night; the Drowned Fiddler, the chapel, the Heroes' Guild and Ostrich &amp; Sons; the cellars under the Fiddler (mind the riddle); the rat warrens and their election; and the first rooms of the third level.</li>
+        <li>Six heroes, fights you can talk or bribe your way out of, spells, the bard's songs with their tunes, chests and their traps.</li>
+        <li>The game shows its version as it starts, so a report can say which build it's about.</li>
+      </ul>
+    </article>
   </div>
 </section>
 </main>
