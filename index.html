@@ -143,7 +143,7 @@
       <p>Print it at 100% (actual size, not &ldquo;fit to page&rdquo;), cut on the corner marks, and fold on the dashed ones.</p>
       <div class="actions"><a class="btn" href="the-unsung-inlay.pdf" download>Download the inlay (PDF)</a></div>
     </div>
-    <a class="inlay-pic" href="the-unsung-inlay.png"><img src="the-unsung-inlay.png" width="530" height="840" loading="lazy" alt="The cassette inlay: a black cover with ZX SPECTRUM NEXT and rainbow stripes, the gilded logo, a torch burning in a stone cellar, and the line Someone is stealing the songs of Mardle-on-Wend; the spine and flap with the title; below it the white two-panel leaflet in Spectrum lettering"></a>
+    <a class="inlay-pic" data-caption="The inlay: the card (back flap, spine, front) above the leaflet. Zoom in to read it." href="the-unsung-inlay.png"><img src="the-unsung-inlay.png" width="530" height="840" loading="lazy" alt="The cassette inlay: a black cover with ZX SPECTRUM NEXT and rainbow stripes, the gilded logo, a torch burning in a stone cellar, and the line Someone is stealing the songs of Mardle-on-Wend; the spine and flap with the title; below it the white two-panel leaflet in Spectrum lettering"></a>
   </article>
   <h3 class="hints-head">Stuck? Hints</h3>
   <ul class="nudges">
@@ -442,7 +442,12 @@
 </footer>
 
 <dialog class="lightbox" aria-label="Screenshot">
-  <figure><img alt=""><figcaption></figcaption></figure>
+  <figure><div class="lb-view"><img alt=""></div><figcaption></figcaption></figure>
+  <div class="lb-zoom" role="group" aria-label="Zoom">
+    <button type="button" class="lb-out" aria-label="Zoom out">&minus;</button>
+    <button type="button" class="lb-fit" aria-label="Fit it to the screen">Fit</button>
+    <button type="button" class="lb-in" aria-label="Zoom in">+</button>
+  </div>
   <button class="lb-btn lb-prev" type="button" aria-label="Previous picture">&lsaquo;</button>
   <button class="lb-btn lb-next" type="button" aria-label="Next picture">&rsaquo;</button>
   <button class="lb-btn lb-close" type="button" autofocus aria-label="Close">&times;</button>
